@@ -30,8 +30,8 @@ const FontSizeButton = () => {
     ? editor?.getAttributes("textStyle").fontSize.replace("px", "")
     : "16";
 
-    const [fontSize, setFontSize] = useState(currentFontSize);
-    const [inputValue, setInputValue] = useState(fontSize);
+    // const [fontSize, setFontSize] = useState(currentFontSize);
+    // const [inputValue, setInputValue] = useState(fontSize);
     
 
     return (
@@ -157,7 +157,7 @@ const AlignButton = () => {
 const ImageButton = () => {
     const { editor } = useEditorStore();
     const [isDialogOpen, setIsDialogOpen] = useState(false);
-    const [Value, setValue] = useState("");
+    // const [Value, setValue] = useState("");
     const [imageUrl, setImageUrl] = useState("");
 
     const onChange = (src: string) => {
